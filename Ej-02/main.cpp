@@ -44,8 +44,9 @@ int main() {
     Pila<char> P;
     string palabra;
 
-    cout << "ingrese la palabra: ";
-    cin >> palabra; cout << endl;
+    cout << "ingrese la frase: ";
+    getline(cin,palabra);
+    cout << endl;
 
     for(i=0; i<palabra.length(); i++){
         if(palabra[i] != ' '){

@@ -18,7 +18,7 @@ bool iguales(Cola<T> &a, Cola<T> &b){
     }
 
     if(xlen != ylen) return false;
-    else for(i=0; i<xlen; i++){
+    else for(i=0; i<xlen-1; i++){
             if(x[i] != y[i])
                 return false;
         }
@@ -32,8 +32,8 @@ int main() {
     Cola<char> a, b;
     string A, B;
 
-    cout << "ingrese cadena 1: "; cin >> A; cout << endl;
-    cout << "ingrese cadena 2: "; cin >> B; cout << endl;
+    cout << "ingrese cadena 1: "; getline(cin,A); cout << endl;
+    cout << "ingrese cadena 2: "; getline(cin,B); cout << endl;
 
     for(i=0; i<A.length(); i++){ a.encolar(A[i]); }
     for(i=0; i<B.length(); i++){ b.encolar(B[i]); }
