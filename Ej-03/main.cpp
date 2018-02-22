@@ -1,7 +1,10 @@
 #include <iostream>
+#include <string>
 #include "../Cola/Cola.h"
+#include "ColaPrior.h"
+
+using namespace std;
 
 int main() {
-    std::cout << "Ejercicio 04/03\n" << std::endl;
     return 0;
 }
